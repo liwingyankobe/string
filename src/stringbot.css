@@ -1,0 +1,188 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body{
+  background-color:#000000;
+  color:#ffffff;
+  font-family:"Source Sans Pro",sans-serif;
+  line-height:1.618;
+  text-align:center;
+  text-rendering:optimizeLegibility;
+  font-weight:400;
+  padding-bottom: 4em;
+}
+
+a,a:visited{
+  color:#7eeeef
+}
+
+a:hover{
+  text-decoration:none
+}
+
+a:active,a:focus{
+  outline:2px solid #7eeeef
+}
+
+h1{
+  font-size:2.617924em;
+  line-height:1.214;
+  letter-spacing:-1px;
+  font-weight:300;
+  margin:1.34em 0 .67em
+}
+
+.header{
+  background: #333;
+  z-index:999;
+  width:100%;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftMenu{
+  float: left;
+}
+
+.rightMenu{
+  float: right;
+}
+
+.menuButton, .menuText{
+  border: none;
+  background-color: #333;
+	color: white;
+  font-size:1.25em;
+	padding: 8px 12px;
+	text-align: center;
+	text-decoration: none;
+	font-family:"Source Sans Pro",sans-serif;
+	display: inline-block;
+}
+
+.menuButton{
+  transition: 0.2s;
+	cursor: pointer;
+}
+
+.menuButton:hover{
+  background-color: #666;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+  border-collapse: collapse;
+	word-break:break-all;
+}
+
+tbody tr:hover{
+	background-color: #181818;
+}
+
+th{
+  padding: 0 12px;
+}
+
+td{
+  padding: 5px 12px;
+}
+
+.tooltipContainer {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  padding: 5px 5px;
+  background-color: #444;
+  z-index: 100;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.navBar {
+  margin-top: 30px;
+}
+
+.unselected, .selected{
+  border: none;
+  font-size:1.25em;
+	padding: 3px 8px;
+	text-align: center;
+	text-decoration: none;
+	font-family:"Source Sans Pro",sans-serif;
+	display: inline-block;
+}
+
+.unselected{
+  background-color: #000000;
+  color:#7eeeef;
+  cursor: pointer;
+}
+
+.unselected:hover{
+  background-color: #333;
+}
+
+.selected{
+  background-color: #7eeeef;
+}
+
+.achievements{
+  width: 650px;
+  margin:auto;
+}
+
+.imageContainer{
+  padding: 10px 10px;
+  display: inline-block;
+}
+
+.unlockedImage, .lockedImage {
+  width: 64px;
+  height: 64px;
+  border: 2px solid #7eeeef;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.lockedImage {
+  filter: brightness(50%);
+}
+
+.unlockedImage:hover, .lockedImage:hover {
+  transform: scale(1.1);
+}
+
+.search {
+  margin-bottom: 30px;
+  width: 400px;
+  font-family:"Source Sans Pro",sans-serif;
+  text-align: center;
+  padding: 5px;
+}
