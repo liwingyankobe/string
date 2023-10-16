@@ -6,7 +6,6 @@ import psycopg2, psycopg2.extras
 import random
 from discord.ext import commands
 from quart import Quart, request, make_response, redirect
-from PIL import Image, ImageChops
 
 TOKEN = ''
 DATABASE_URL = os.environ['DATABASE_URL']
