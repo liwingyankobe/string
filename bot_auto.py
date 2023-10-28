@@ -356,8 +356,9 @@ async def secret(id,ans):
             connection.commit()
     if ans in secret_level_paths:
         level_id = secret_level_paths.index(ans)
-        role = discord.utils.get(member.roles, name=secret_reach[level_id][0])
-        if not role:
+        role_reach = discord.utils.get(member.roles, name=secret_reach[level_id][0])
+        role_solve = discord.utils.get(member.roles, name=role_secret_solve[level_id])
+        if not role_reach and not role_solve:
             role = discord.utils.get(guild.roles, name=secret_reach[level_id][0])
             await member.add_roles(role)
 
